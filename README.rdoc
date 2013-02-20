@@ -1,0 +1,69 @@
+= supermarket
+
+Simple supermarket for a Reevoo tech test
+
+= How does it works
+
+Set your rules in a Ruby array, at the moment there are two type of rules:
+
+1. Buy-one-get-one-free
+
+  {
+    :type => 'buyonegetonefree',
+    :product_code => 'code'
+  }
+
+2. Bulk Purchase
+
+  {
+    :type => 'bulkpurchase',
+    :product_code => 'code',
+    :items => minimum_items_number,
+    :price => new_price
+  }
+
+Example:
+
+  rules =
+   [
+     {
+       :type => 'buyonegetonefree',
+       :product_code => 'FR1'
+     },
+     {
+       :type => 'bulkpurchase',
+       :product_code => 'SR1',
+       :items => 3,
+       :price => 4.50
+     }
+   ]
+ 
+  co = Checkout.new (rules)
+  co.scan ('SR1')
+  puts co.total
+
+= Use
+
+Install it as a gem 
+
+  gem install supermarket-0.0.0.gem
+
+You need a JSON file with your products, for instance
+I provide a sample file with the data required for this tech
+test:
+
+  products.json
+
+You will find a demo in the sample app I provide:
+
+  ruby -I. supermarket.rb
+
+= Tests
+
+Tests are build on RSpec framework, just do:
+
+  rspec spec
+
+= Author
+
+Hervé Tatche
