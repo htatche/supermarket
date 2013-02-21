@@ -44,7 +44,11 @@ Example:
 
 = Use
 
-Install it as a gem 
+Install needed gems
+
+  bundle install
+
+Install the supermarket gem 
 
   gem install supermarket-0.0.0.gem
 
