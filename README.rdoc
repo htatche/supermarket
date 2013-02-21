@@ -6,14 +6,14 @@ Simple supermarket for a Reevoo tech test
 
 Set your rules in a Ruby array, at the moment there are two type of rules:
 
-- Buy-one-get-one-free
+-Buy-one-get-one-free
 
   {
     :type => 'buyonegetonefree',
     :product_code => 'code'
   }
 
-- Bulk Purchase
+-Bulk Purchase
 
   {
     :type => 'bulkpurchase',
