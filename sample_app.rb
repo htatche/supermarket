@@ -1,5 +1,5 @@
-require 'lib/checkout'
-require 'lib/catalog'
+require 'rubygems'
+require 'supermarket'
 
 rules =
 [

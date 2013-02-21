@@ -6,6 +6,6 @@ Gem::Specification.new do |s|
   s.description = 'A simple and tiny virtual supermarket for a Reevoo tech test.'
   s.authors     = ['Herve Tatche']
   s.email       = 'herve.tatche@gmail.com'
-  s.files       = ['lib/catalog.rb', 'lib/checkout.rb']
+  s.files       = ['lib/supermarket.rb', 'lib/supermarket/catalog.rb', 'lib/supermarket/checkout.rb']
 #s.homepage    = 'http://rubygems.org/gems/ihackernews_monkey'
 end

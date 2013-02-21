@@ -1,3 +1,3 @@
-require_relative '../lib/checkout'
-require_relative '../lib/catalog'
 require 'yaml'
+require_relative '../lib/supermarket/checkout'
+require_relative '../lib/supermarket/catalog'
