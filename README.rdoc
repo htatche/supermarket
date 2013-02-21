@@ -60,7 +60,7 @@ test:
 
 You will find a demo in the sample app I provide:
 
-  ruby -I. supermarket.rb
+  ruby sample_app.rb
 
 = Tests
 
